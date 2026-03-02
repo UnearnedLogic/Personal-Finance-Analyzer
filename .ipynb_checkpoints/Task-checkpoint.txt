@@ -1,0 +1,147 @@
+PROJECT: Personal Finance Transaction Analysis
+CLIENT: Personal Finance Coaching Platform
+ROLE: Data Analyst
+
+OBJECTIVE:
+Analyze transaction data to uncover spending patterns, financial risks, and provide strategic recommendations.
+
+------------------------------------------------------------
+PHASE 1 — DATA AUDIT & CLEANING
+------------------------------------------------------------
+
+1. Load the dataset and inspect structure:
+   - Check shape (rows, columns)
+   - Review data types
+   - Preview first and last rows
+
+2. Data Quality Checks:
+   - Detect missing values in all columns
+   - Identify duplicate rows
+   - Check for negative or zero Amount values
+   - Verify that "Type" column contains valid categories (Expense, Income, etc.)
+   - Look for inconsistent category naming
+
+3. Date Handling:
+   - Convert Date column to datetime
+   - Extract:
+        • Year
+        • Month
+        • Month-Year
+   - Check for invalid or out-of-range dates
+
+4. Data Validation Rules:
+   - Ensure Expenses have positive Amount
+   - Check for extremely large outliers
+   - Confirm there are no impossible transaction patterns
+
+5. Deliverable:
+   - Write a short summary of data issues found
+   - Document all cleaning steps performed
+   - State assumptions made during cleaning
+
+
+------------------------------------------------------------
+PHASE 2 — SPENDING STRUCTURE ANALYSIS
+------------------------------------------------------------
+
+1. Calculate:
+   - Total spending per Category
+   - Percentage contribution of each Category
+   - Average transaction amount per Category
+   - Transaction frequency per Category
+
+2. Identify:
+   - Top 3 highest spending categories
+   - Categories with highest average transaction
+   - Categories with highest frequency
+
+3. Compare:
+   - High frequency vs high amount categories
+   - Essential vs non-essential spending patterns
+
+4. Deliverable:
+   - Summarize key findings
+   - Highlight areas of potential overspending
+
+
+------------------------------------------------------------
+PHASE 3 — TIME-BASED TREND ANALYSIS
+------------------------------------------------------------
+
+1. Compute:
+   - Monthly total spending
+   - Monthly average transaction value
+   - Monthly transaction count
+
+2. Analyze:
+   - Spending growth or decline trend
+   - Detect seasonal patterns
+   - Identify spending spikes
+
+3. Category Over Time:
+   - Monthly spending per category
+   - Categories with increasing trend
+
+4. Deliverable:
+   - Explain trend behavior
+   - Identify months of financial instability
+
+
+------------------------------------------------------------
+PHASE 4 — FINANCIAL RISK & ANOMALY DETECTION
+------------------------------------------------------------
+
+1. Transaction-Level Outliers:
+   - Calculate mean and standard deviation of Amount
+   - Identify transactions above (mean + 2*std)
+
+2. Monthly Volatility:
+   - Compute monthly standard deviation
+   - Identify high volatility months
+
+3. Category Risk:
+   - Determine which categories have unpredictable spending
+
+4. Create a Financial Risk Score:
+   - Define scoring logic based on:
+        • Volatility
+        • Large abnormal expenses
+        • Trend instability
+   - Assign score per month
+
+5. Deliverable:
+   - Explain risk scoring logic
+   - Highlight high-risk periods
+
+
+------------------------------------------------------------
+PHASE 5 — STRATEGIC CONSULTING RECOMMENDATIONS
+------------------------------------------------------------
+
+Based on analysis:
+
+1. Identify:
+   - Where spending should be reduced
+   - Where budgeting discipline is needed
+   - Which behaviors increase financial risk
+
+2. Provide:
+   - 3 clear strategic recommendations
+   - 2 short-term improvement actions
+   - 2 long-term financial health suggestions
+
+3. Write final executive summary:
+   - Main insights
+   - Key risks
+   - Improvement opportunities
+   - Overall financial stability assessment
+
+------------------------------------------------------------
+
+FINAL OUTPUT:
+Notebook should include:
+- Clean workflow
+- Logical progression
+- Clear markdown explanations
+- Business-oriented conclusions
+- Professional presentation
